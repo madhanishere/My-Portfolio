@@ -1,20 +1,27 @@
-import Hero from './components/Hero'
-import ProjectGrid from './components/ProjectGrid'
-import Dock from './components/Dock';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import GithubChart from './components/GithubChart';
-import ExtraCurricular from './components/ExtraCurricular';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import Marquee from './components/Marquee';
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Education from "./components/Education";
+import Dock from "./components/Dock";
+import ProjectGrid from "./components/ProjectGrid";
+import GithubChart from "./components/GithubChart";
+import ExtraCurricular from "./components/ExtraCurricular";
+import Marquee from "./components/Marquee";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    /* Added bg-[#050505] and min-h-screen to ensure visibility */
-    <div className="flex flex-col gap-10 pb-32 bg-[#050505] min-h-screen">
-      <main>
+    <div 
+      className="min-h-screen bg-[#141414] text-white selection:bg-[#FFDE03] selection:text-black"
+      /* Increased dot size and slightly brighter gray */
+      style={{
+        backgroundImage: `radial-gradient(#222 1.2px, transparent 1.2px)`,
+        backgroundSize: '28px 28px', // Slightly tighter grid for more "texture"
+      }}
+    >
+      <main className="flex flex-col gap-10 pb-32">
         <Navbar />
         <Hero />
         <Experience />
@@ -29,10 +36,9 @@ function App() {
         <Marquee />
 
         <Footer />
-
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
