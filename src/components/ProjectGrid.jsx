@@ -15,6 +15,12 @@ const projects = [
     details: "Developed a Python-based CLI tool to automate bulk email delivery. Integrated Gmail SMTP and CSV processing to handle secure, personalized outreach.",
     tags: ["Python", "CLI", "Automation"],
     github: "https://github.com/madhanishere/Bulk-Mail-Sender",
+  },{
+    title: "Weather App",
+    description: "Real-time weather tracking via PyScript. No backend required.",
+    details: "A browser-based weather dashboard utilizing PyScript to run Python logic directly in the frontend. Integrates OpenWeatherMap API for live temperature and condition.",
+    tags: ["Python", "PyScript", "API", "HTML/CSS"],
+    github: "https://github.com/madhanishere/Weather-App", // Ensure this link is correct
   }
 ];
 

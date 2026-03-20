@@ -9,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/50 backdrop-blur-sm border-b border-white/5">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/30 backdrop-blur-sm border-b border-white/5">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between font-mono">
         
         {}

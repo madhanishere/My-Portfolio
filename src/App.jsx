@@ -21,7 +21,7 @@ function App() {
         backgroundSize: '28px 28px', // Slightly tighter grid for more "texture"
       }}
     >
-      <main className="flex flex-col gap-10 pb-32">
+        <main className=" flex-col gap-1">
         <Navbar />
         <Hero />
         <Experience />
