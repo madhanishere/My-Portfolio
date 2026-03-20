@@ -12,20 +12,21 @@ import Marquee from './components/Marquee';
 
 function App() {
   return (
-    <div className="flex flex-col gap-10 pb-32">
+    /* Added bg-[#050505] and min-h-screen to ensure visibility */
+    <div className="flex flex-col gap-10 pb-32 bg-[#050505] min-h-screen">
       <main>
         <Navbar />
         <Hero />
         <Experience />
         <Skills />
-                <Education /> 
+        <Education /> 
 
         <Dock />
         <ProjectGrid />
-                <GithubChart />
+        <GithubChart />
 
         <ExtraCurricular />
-                <Marquee />
+        <Marquee />
 
         <Footer />
 
