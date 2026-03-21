@@ -49,7 +49,7 @@ export default function ProjectList() {
               <a 
                 href={project.github} 
                 target="_blank" 
-                className="text-gray-400 hover:text-white flex items-center gap-1 text-xs uppercase font-bold tracking-widest"
+                className="text-white flex items-center gap-1 text-xs uppercase font-bold tracking-widest"
               >
                 view repo <ExternalLink size={14} />
               </a>
