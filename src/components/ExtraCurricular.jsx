@@ -19,8 +19,8 @@ export default function ExtraCurricular() {
 
   return (
     <section id="extra-curricular" className="max-w-3xl mx-auto px-6 py-4 mb-8 font-mono">
-      <h2 className="text-2xl font-bold  text-white  mb-8">
-        Extra <span className="text-[#FFDE03]">Curriculars</span>
+      <h2 className="text-xl font-bold  text-white  mb-8">
+        Extra Curriculars
       </h2>
 
       <ul className="space-y-6">
@@ -31,10 +31,10 @@ export default function ExtraCurricular() {
             
             <div className="flex flex-col gap-1">
               <div className="flex justify-between items-baseline">
-                <h3 className="text-sm font-bold text-white uppercase tracking-tight">
+                <h3 className="text-sm font-bold text-white  ">
                   {act.role}
                 </h3>
-                <span className="text-[10px] text-gray-600 uppercase tracking-tighter">
+                <span className="text-[10px] text-gray-600 uppercase ">
 
                 </span>
               </div>

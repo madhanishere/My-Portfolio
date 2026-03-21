@@ -15,8 +15,8 @@ export default function GithubChart() {
 
   return (
 <section id="github" className="max-w-4xl mx-auto px-6 pt-12 pb-4 mb-4 font-mono">      
-    <h2 className="text-2xl font-black  mb-12 text-white">
-        Github <span className="text-[#FFDE03]">Commits</span>
+    <h2 className="text-xl font-black  mb-12 text-white">
+        Contributions 
       </h2>
 
       <div className="border border-white/10 bg-[#0A0A0A]/50 p-6 md:p-8 rounded-xl shadow-[0_0_25px_rgba(255,222,3,0.05)]">
@@ -27,7 +27,7 @@ export default function GithubChart() {
             colorScheme="dark"
             theme={yellowTheme}
             fontSize={12}
-            blockSize={12}
+            blockSize={10}
             blockMargin={4}
             showWeekdayLabels={true}
           />

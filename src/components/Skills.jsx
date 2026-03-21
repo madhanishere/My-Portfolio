@@ -23,8 +23,8 @@ export default function Skills() {
     <section id="skills" className="max-w-3xl mx-auto px-6 py-4 mb-8 font-mono">
       
       {}
-      <h2 className="text-2xl font-bold  text-white  mb-8">
-        Technical <span className="text-[#FFDE03]">Skills</span>
+      <h2 className="text-xl font-bold  text-white  mb-8">
+         <span className="text-[#ffffff]">Skills</span>
       </h2>
 
       {}
@@ -32,7 +32,7 @@ export default function Skills() {
         {skillCategories.map((category, i) => (
           <div key={i} className="flex flex-col gap-3 group">
             {}
-            <h3 className="text-[10px] text-gray-500 uppercase tracking-[0.3em] font-bold group-hover:text-[#FFDE03] transition-colors">
+            <h3 className="text-[10px] uppercase tracking-wide font-bold text-gray-400">
               {category.title}
             </h3>
 

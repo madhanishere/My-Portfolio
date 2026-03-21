@@ -13,7 +13,7 @@ export default function Dock() {
   return (
     <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
       {}
-      <div className="bg-[#0A0A0A]/90 border border-white/10 px-6 py-3 rounded-full flex gap-6 items-center shadow-2xl backdrop-blur-md">
+      <div className="bg/90 border border-white/10 px-6 py-3 rounded-full flex gap-6 items-center shadow-2xl backdrop-blur-md">
         
 
         {}

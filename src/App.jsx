@@ -1,6 +1,6 @@
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
@@ -8,8 +8,9 @@ import Dock from "./components/Dock";
 import ProjectGrid from "./components/ProjectGrid";
 import GithubChart from "./components/GithubChart";
 import ExtraCurricular from "./components/ExtraCurricular";
-import Marquee from "./components/Marquee";
+
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 
 function App() {
   return (
@@ -33,7 +34,7 @@ function App() {
         <GithubChart />
 
         <ExtraCurricular />
-        <Marquee />
+        
 
         <Footer />
       </main>

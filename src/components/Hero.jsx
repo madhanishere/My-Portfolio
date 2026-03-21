@@ -4,9 +4,12 @@ export default function Hero() {
       {}
      
 
-      <h1 className="text-4xl md:text-5xl font-black mb-4 flex flex-wrap items-center gap-4 text-white tracking-tight ">
-        <span className="text-[#FFDE03] ">Madhan</span> 
-        <span >Raghuram</span>
+      <h1 className="text-4xl md:text-4xl font-black mb-4 flex flex-wrap items-center gap-4 text-white tracking-tight ">
+        
+                <span className="text-[#ffffff] "> Madhan</span> 
+
+        <span className="text-[#FFDE03] "> Raghuram</span> 
+        
       </h1>
       
       {}
@@ -17,8 +20,8 @@ Your friendly neighborhood developer!      </p>
 
       {}
       <div className="mt-12">
-        <h2 className="text-2xl font-black  mb-12 text-white  font-mono">
-          About <span className="text-[#FFDE03]">Me</span>
+        <h2 className="text-xl font-black  mb-12 text-white  font-mono">
+          About Me
         </h2>
   
         <div className="space-y-6 text-gray-400 text-sm leading-relaxed font-mono tracking-tight max-w-2xl">

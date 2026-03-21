@@ -9,17 +9,17 @@ export default function Experience() {
 
   return (
     <section id="experience" className="max-w-3xl mx-auto px-6 py-12">
-      <h2 className="text-2xl font-black  mb-12 text-white font-mono">
-        Professional <span className="text-[#FFDE03]">Experience</span>
+      <h2 className="text-xl font-black mb-12 text-white font-mono  ">
+        Experience
       </h2>
 
       <div className="flex gap-8">
-        {}
-        <div className="w-[6px] bg-[#FFDE03] shrink-0 h-auto opacity-90" />
+        {/* Thin Vertical Accent Bar - Updated to w-[1px] */}
+        <div className="w-[1px] bg-[#FFDE03] shrink-0 h-auto opacity-80" />
 
         <div className="flex-1">
           <div className="mb-8">
-            <h3 className="text-xl font-black  text-white font-mono">
+            <h3 className="text-0.5xl font-black text-white font-mono  ">
               Software Development Intern
             </h3>
             <div className="flex justify-between items-center mt-2">
@@ -32,7 +32,7 @@ export default function Experience() {
             </div>
           </div>
 
-          {}
+          {/* Bullet Points */}
           <ul className="space-y-4 mb-10 max-w-2xl">
             {points.map((point, i) => (
               <li key={i} className="flex gap-4 text-gray-400 text-sm leading-relaxed font-mono tracking-tight">
@@ -42,12 +42,13 @@ export default function Experience() {
             ))}
           </ul>
 
-          {}
+          {/* Static Sticker Badges */}
           <div className="flex flex-wrap gap-3 mt-6">
             {skills.map((skill, i) => (
               <span 
                 key={i} 
-                className="bg-[#FFDE03] text-black border-2 border-black px-2 py-0.5 text-[9px] font-black shadow-[3px_3px_0px_0px_white] uppercase hover:translate-x-[1px] hover:translate-y-[1px] hover:shadow-none transition-all cursor-default"
+                /* Removed hover effects to make shadow static */
+                className="bg-[#FFDE03] text-black border-2 border-black px-2 py-0.5 text-[9px] font-black shadow-[3px_3px_0px_0px_white] uppercase cursor-default"
               >
                 {skill}
               </span>
