@@ -26,20 +26,20 @@ const projects = [
 
 export default function ProjectList() {
   return (
-    <section id="projects" className="max-w-4xl mx-auto px-6 py-20 font-mono">
-      <h2 className="text-xl font-black mb-12 text-white ">
+    <section id="projects" className="max-w-4xl mx-auto px-6 py-20 ">
+      <h2 className="text-xl font-black mb-12 text-white font-mono ">
         <span className="text-[#ffffff]"> Projects</span>
       </h2>
 
-      <div className="space-y-6">
+      <div className="space-y-6 ">
         {projects.map((project, i) => (
           <div 
             key={i} 
             /* Removed shadow-[8px_8px_0px_0px_#FFDE03] and transition classes */
-            className="relative border-2 border-white/10 bg-[#111] p-8"
+            className="relative border-2 border-white/10 bg-[#111] p-8 "
           >
             {/* Header: Title and Link */}
-            <div className="flex justify-between items-start mb-4">
+            <div className="flex justify-between items-start mb-4 font-mono">
               <div>
                 <h3 className="text-0.5xl font-black text-[#ffffff]">
                   {project.title} <span className="text-gray-500 font-normal mx-2">—</span> 
@@ -56,7 +56,7 @@ export default function ProjectList() {
             </div>
 
             {/* Description */}
-            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-3xl">
+            <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-3xl font-mono">
               • {project.description}
             </p>
 
@@ -64,10 +64,9 @@ export default function ProjectList() {
             <div className="flex flex-wrap gap-2"> {/* Reduced gap from 3 to 2 */}
   {project.tags.map((tag) => (
     <span 
-      key={tag} 
-      
-      className="px-2 py-0.5 bg-[#FFDE03] border-[1.5px] border-black text-black text-[9px] font-black uppercase  shadow-[2.5px_2.5px_0px_0px_white] cursor-default whitespace-nowrap"
-    >
+                key={i} 
+                className="bg-[#FFDE03] text-black border-2 border-black px-2 py-0.5 text-[9px] font-black shadow-[3px_3px_0px_0px_white] uppercase cursor-default"
+              >
       {tag}
     </span>
   ))}
