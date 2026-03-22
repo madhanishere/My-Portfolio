@@ -10,7 +10,7 @@ export default function Footer() {
         {}
         <div className="flex flex-col gap-2">
           <p className="text-[10px] text-gray-500 uppercase tracking-[0.2em]">
-            Built with React & Tailwind
+            Built with <span className="text-neo-yellow">React & Tailwind</span>
           </p>
           <p className="text-[10px] text-white/40 uppercase tracking-[0.2em]">
             © {currentYear} Madhan Raghuram 
