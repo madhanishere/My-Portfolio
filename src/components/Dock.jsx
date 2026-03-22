@@ -3,8 +3,8 @@ import { Home, Folder, Linkedin, Github, Moon, Mail } from 'lucide-react';
 export default function Dock() {
 
   const links = {
-    github: "https:
-    linkedin: "https:
+    github: "https://github.com/madhanishere",
+    linkedin: "https://linkedin.com/in/madhan-raghuram",
     email: "mailto:madhanraghuram@gmail.com",
     projects: "#projects",
     home: "#home"

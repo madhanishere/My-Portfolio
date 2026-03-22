@@ -6,21 +6,21 @@ const projects = [
     subtitle: "AI-Powered Browser Extension",
     description: "A browser extension that extracts and summarizes web content. Architected a full-stack solution using Spring Boot REST APIs for high-performance content ingestion. Integrated note taking feature.",
     tags: ["Spring Boot", "REST API", "JavaScript", "AI"],
-    github: "https:
+    github: "https://github.com/madhanishere/research-assistant"
   },
   {
     title: "BulkMailer",
     subtitle: "Automated bulk email delivery system.",
     description: "Developed a Python-based CLI tool to automate bulk email delivery. Integrated Gmail SMTP and CSV processing to handle secure, personalized outreach for professional financial environments. Automated bulk email delivery system. Implemented for Galada Finance Pvt.Ltd.",
     tags: ["Python", "CLI", "Automation"],
-    github: "https:
+    github: "https://github.com/madhanishere/Bulk-Mail-Sender"
   },
   {
     title: "Weather App",
     subtitle: "Real-time weather tracking via PyScript",
     description: "A browser-based weather dashboard utilizing PyScript to run Python logic directly in the frontend. Integrates OpenWeatherMap API for live updates without a backend.",
     tags: ["Python", "PyScript", "API", "Web Development "],
-    github: "https:
+    github: "https://github.com/madhanishere/weather-app"
   }
 ];
 

@@ -40,9 +40,9 @@ export default function GithubChart() {
 
         </div>
         <a 
-          href={`https:
+          href={`https://github.com/${username}`}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferer"
           className="hover:text-white transition-colors border-b border-[#FFDE03]/20"
         >
 
