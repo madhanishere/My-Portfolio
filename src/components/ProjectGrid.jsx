@@ -6,21 +6,21 @@ const projects = [
     subtitle: "AI-Powered Browser Extension",
     description: "A browser extension that extracts and summarizes web content. Architected a full-stack solution using Spring Boot REST APIs for high-performance content ingestion. Integrated note taking feature.",
     tags: ["Spring Boot", "REST API", "JavaScript", "AI"],
-    github: "https://github.com/madhanishere/Research-Assistant",
+    github: "https:
   },
   {
     title: "BulkMailer",
     subtitle: "Automated bulk email delivery system.",
     description: "Developed a Python-based CLI tool to automate bulk email delivery. Integrated Gmail SMTP and CSV processing to handle secure, personalized outreach for professional financial environments. Automated bulk email delivery system. Implemented for Galada Finance Pvt.Ltd.",
     tags: ["Python", "CLI", "Automation"],
-    github: "https://github.com/madhanishere/Bulk-Mail-Sender",
+    github: "https:
   },
   {
     title: "Weather App",
     subtitle: "Real-time weather tracking via PyScript",
     description: "A browser-based weather dashboard utilizing PyScript to run Python logic directly in the frontend. Integrates OpenWeatherMap API for live updates without a backend.",
     tags: ["Python", "PyScript", "API", "Web Development "],
-    github: "https://github.com/madhanishere/Weather-App",
+    github: "https:
   }
 ];
 
@@ -35,10 +35,10 @@ export default function ProjectList() {
         {projects.map((project, i) => (
           <div 
             key={i} 
-            /* Removed shadow-[8px_8px_0px_0px_#FFDE03] and transition classes */
+            
             className="relative border-2 border-white/10 bg-[#111] p-8 "
           >
-            {/* Header: Title and Link */}
+            {}
             <div className="flex justify-between items-start mb-4 font-mono">
               <div>
                 <h3 className="text-0.5xl font-black text-[#ffffff]">
@@ -55,13 +55,13 @@ export default function ProjectList() {
               </a>
             </div>
 
-            {/* Description */}
+            {}
             <p className="text-gray-400 text-sm leading-relaxed mb-6 max-w-3xl font-mono">
               • {project.description}
             </p>
 
-            {/* Tags - The only parts with shadows now */}
-            <div className="flex flex-wrap gap-2"> {/* Reduced gap from 3 to 2 */}
+            {}
+            <div className="flex flex-wrap gap-2"> {}
   {project.tags.map((tag) => (
     <span 
                 key={i} 

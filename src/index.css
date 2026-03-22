@@ -7,7 +7,7 @@
   --shadow-brutal: 5px 5px 0px 0px #FFDE03;
   --shadow-brutal-hover: 2px 2px 0px 0px #FFDE03;
 }
-/* src/index.css */
+
 @layer base {
   body {
     @apply bg-[#050505];

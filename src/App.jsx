@@ -16,10 +16,10 @@ function App() {
   return (
     <div 
       className="min-h-screen bg-[#141414] text-white selection:bg-[#FFDE03] selection:text-black"
-      /* Increased dot size and slightly brighter gray */
+      
       style={{
         backgroundImage: `radial-gradient(#222 1.2px, transparent 1.2px)`,
-        backgroundSize: '28px 28px', // Slightly tighter grid for more "texture"
+        backgroundSize: '28px 28px', 
       }}
     >
         <main className=" flex-col gap-1">

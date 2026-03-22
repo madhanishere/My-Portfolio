@@ -10,20 +10,17 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/40 backdrop-blur-md border-b border-white/5 font-mono">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between font-mono text-left">
         
-        {/* Neo Yellow Spider - Matches #FFDE03 exactly */}
+        {}
         <div className="flex items-center select-none">
           <span 
-            className="text-xl"
-            style={{ 
-              /* This specific filter combination forces the emoji to #FFDE03 */
-              filter: 'brightness(0) saturate(100%) invert(87%) sepia(35%) saturate(3665%) hue-rotate(359deg) brightness(108%) contrast(106%)' 
-            }}
+            className="text-0.5xl font-bold font-mono"
+
           >
-            🕷️
+            MR<span className="text-[#FFDE03]">.</span>
           </span>
         </div>
 
-        {/* Navigation Items */}
+        {}
         <div className="flex items-center gap-4 text-[12px] tracking-tight">
           {navItems.map((item, index) => (
             <div key={item.name} className="flex items-center gap-4">

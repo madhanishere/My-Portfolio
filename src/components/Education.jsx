@@ -12,7 +12,7 @@ export default function Education() {
       </h2>
 
       <div className="flex gap-8">
-        {/* Vertical Accent Bar - Reduced from w-[6px] to w-[1px] */}
+        {}
         <div className="w-[1px] bg-[#FFDE03] shrink-0 h-auto opacity-80" />
 
         <div className="flex-1">
@@ -30,7 +30,7 @@ export default function Education() {
             </div>
           </div>
 
-          {/* Bullet Points */}
+          {}
           <ul className="space-y-4 mb-10 max-w-2xl">
             {projects.map((point, i) => (
               <li key={i} className="flex gap-4 text-gray-400 text-sm leading-relaxed font-mono tracking-tight">
@@ -40,7 +40,7 @@ export default function Education() {
             ))}
           </ul>
 
-          {/* Static Sticker Badges */}
+          {}
           <div className="flex flex-wrap gap-3 mt-6">
             {certifications.map((skill, i) => (
               <span 
