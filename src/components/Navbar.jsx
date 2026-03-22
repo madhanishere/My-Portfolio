@@ -2,17 +2,28 @@ export default function Navbar() {
   const navItems = [
     { name: "home", href: "#home" },
     { name: "experience", href: "#experience" },
-            { name: "skills", href: "#skills" },
-
+    { name: "skills", href: "#skills" },
     { name: "projects", href: "#projects" }
-
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/30 backdrop-blur-sm border-b border-white/5">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between font-mono">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/40 backdrop-blur-md border-b border-white/5 font-mono">
+      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between font-mono text-left">
+        
+        {/* Neo Yellow Spider - Matches #FFDE03 exactly */}
+        <div className="flex items-center select-none">
+          <span 
+            className="text-xl"
+            style={{ 
+              /* This specific filter combination forces the emoji to #FFDE03 */
+              filter: 'brightness(0) saturate(100%) invert(87%) sepia(35%) saturate(3665%) hue-rotate(359deg) brightness(108%) contrast(106%)' 
+            }}
+          >
+            🕷️
+          </span>
+        </div>
 
-        {}
+        {/* Navigation Items */}
         <div className="flex items-center gap-4 text-[12px] tracking-tight">
           {navItems.map((item, index) => (
             <div key={item.name} className="flex items-center gap-4">
@@ -23,7 +34,6 @@ export default function Navbar() {
                 {item.name}
               </a>
               
-              {}
               {index !== navItems.length - 1 && (
                 <span className="text-gray-800 font-light select-none">/</span>
               )}
