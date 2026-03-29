@@ -12,6 +12,7 @@ import ExtraCurricular from "./components/ExtraCurricular";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 
+
 function App() {
   return (
     <div 
