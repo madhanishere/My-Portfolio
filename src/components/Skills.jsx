@@ -66,7 +66,7 @@ export default function Skills() {
               {category.skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="px-3 py-1.5 bg-[#0c1834] border border-[#FF7A1A]/20 text-[11px] text-gray-300  hover:text-white hover:bg-[#2D3B5C] transition-all cursor-default rounded-sm"
+                  className="px-3 py-1.5 bg-[#1F2432] border border-[#FF7A1A]/20 text-[11px] text-gray-300  hover:text-white hover:bg-[#ca6c29] transition-all cursor-default rounded-sm"
                 >
                   {skill}
                 </div>
