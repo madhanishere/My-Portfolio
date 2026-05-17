@@ -16,7 +16,7 @@ export default function GithubChart() {
   return (
     <section
       id="github"
-      className="max-w-3xl mx-auto px-6 py-8 "
+      className="max-w-3xl mx-auto px-6 py-4 "
     >
       <h2 className="text-2xl font-black text-[#E5E7EB] mb-8 tracking-tight font-mono">
         GitHub Activity
