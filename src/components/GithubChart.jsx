@@ -1,53 +1,44 @@
-import { GitHubCalendar } from 'react-github-calendar';
+import {GitHubCalendar} from "react-github-calendar";
 
 export default function GithubChart() {
   const username = "madhanishere";
 
-  const yellowTheme = {
+  const theme = {
     dark: [
-      '#1A1A1A', 
-      '#4D4301', 
-      '#998502', 
-      '#CCB102', 
-      '#FFDE03'  
+      "#2A3145",
+      "#C8DE8A",
+      "#9BE564",
+      "#26A641",
+      "#39D353",
     ],
   };
 
   return (
-<section id="github" className="max-w-4xl mx-auto px-6 pt-12 pb-4 mb-4 font-mono">      
-    <h2 className="text-xl font-black  mb-12 text-white">
-        Contributions 
+    <section
+      id="github"
+      className="max-w-3xl mx-auto px-6 py-8 "
+    >
+      <h2 className="text-2xl font-black text-[#E5E7EB] mb-8 tracking-tight font-mono">
+        GitHub Activity
       </h2>
-
-      <div className="border border-white/10 bg-[#0A0A0A]/50 p-6 md:p-8 rounded-xl shadow-[0_0_25px_rgba(255,222,3,0.05)]">
-        <div className="flex justify-center items-center overflow-x-auto custom-scrollbar">
-          <GitHubCalendar 
-            username={username}
-            year={2026} 
-            colorScheme="dark"
-            theme={yellowTheme}
-            fontSize={12}
-            blockSize={10}
-            blockMargin={4}
-            showWeekdayLabels={true}
-          />
-        </div>
+<br />
+      <div className="overflow-hidden">
+        <GitHubCalendar
+          username={username}
+          year={new Date().getFullYear()}
+          colorScheme="dark"
+          theme={theme}
+          fontSize={12}
+          blockSize={12}
+          blockMargin={3}
+          showWeekdayLabels={true}
+        />
       </div>
-      
-      <div className="mt-6 flex justify-between items-center text-[10px] text-gray-600 uppercase tracking-[0.3em]">
-        <div className="flex items-center gap-2">
-
-
-        </div>
-        <a 
-          href={`https://github.com/${username}`}
-          target="_blank"
-          rel="noopener noreferer"
-          className="hover:text-white transition-colors border-b border-[#FFDE03]/20"
-        >
-
-        </a>
-      </div>
+      <br />
+              <br />
+         <p className="w-full text-[#FF7A1A] overflow-hidden whitespace-nowrap text-sm md:text-base">
+  --------------------------------------------------------------------------------------------------------------------------------
+</p>
     </section>
   );
 }

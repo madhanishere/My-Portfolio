@@ -7,36 +7,40 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#050505]/40 backdrop-blur-md border-b border-white/5 font-mono">
-      <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between font-mono text-left">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#1F2940]/70 backdrop-blur-xl border-b border-white/5 font-mono">
+      
+      <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
         
-        {}
+        {/* Logo */}
         <div className="flex items-center select-none">
-          <span 
-            className="text-0.5xl font-bold font-mono"
-
-          >
-            MR<span className="text-[#FFDE03]">.</span>
+          <span className="text-sm font-black tracking-tight text-white">
+            MR
+            <span className="text-[#FF7A1A]">.</span>
           </span>
         </div>
 
-        {}
+        {/* Nav Links */}
         <div className="flex items-center gap-4 text-[12px] tracking-tight">
+          
           {navItems.map((item, index) => (
             <div key={item.name} className="flex items-center gap-4">
+              
               <a
                 href={item.href}
-
-                className="text-gray-400 hover:text-[#FFDE03] transition-colors"
+                className="text-gray-400 hover:text-[#FF7A1A] transition-colors duration-200"
               >
                 {item.name}
               </a>
-              
+
               {index !== navItems.length - 1 && (
-                <span className="text-gray-800 font-light select-none">/</span>
+                <span className="text-gray-700 select-none">
+                  /
+                </span>
               )}
+
             </div>
           ))}
+
         </div>
 
       </div>

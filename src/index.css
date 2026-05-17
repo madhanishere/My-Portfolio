@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
-@theme {
-  --color-dark-bg: #121212;
-  --color-neo-yellow: #FFD700;
-  
-  --shadow-brutal: 5px 5px 0px 0px #FFD700;
-  --shadow-brutal-hover: 2px 2px 0px 0px #FFD700;
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #111a2f !important;
 }
 
-@layer base {
-  body {
-    @apply bg-[#050505];
-  }
-}
-
-.brutalist-grid {
-  background-image: radial-gradient(#222 1px, transparent 1px);
-  background-size: 32px 32px;
-}
 body {
-  background-color: #121212;
-  color: white;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 24px 24px;
+  color: white !important;
+
+  background-color: #222836 !important;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.02),
+      rgba(0,0,0,0.18)
+    ) !important;
+
+  background-size: 28px 28px, 100% 100%;
+  background-attachment: fixed;
+
+  font-family: "JetBrains Mono", monospace;
 }

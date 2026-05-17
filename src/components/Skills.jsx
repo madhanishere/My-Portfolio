@@ -1,55 +1,86 @@
 export default function Skills() {
   const skillCategories = [
     {
-      title: "languages",
-      skills: ["Java", "Python", "JavaScript", "C", "PHP"]
+      title: "languages & frameworks",
+      skills: [
+        "Python",
+        "Java",
+        "C",
+        "SQL",
+        "React",
+        "Spring Boot",
+        "FastAPI"
+      ]
     },
     {
-      title: "backend & cloud",
-      skills: ["Spring Boot", "Laravel", "REST APIs", "AWS", "Spring","MySQL"]
-    },
-    {
-      title: "frontend & tools",
-      skills: ["React", "Tailwind CSS", "Git","GitHub", "Postman"]
+      title: "databases & cloud",
+      skills: [
+        "AWS",
+        "SQLite",
+        "MySQL",
+        "MongoDB",
+        "FAISS",
+        "ChromaDB"
+      ]
     },
     {
       title: "core competencies",
-      skills: ["Computer Networks", "DSA", "OOPs","Microservices"]
+      skills: [
+        "DSA",
+        "AI-Assisted Development",
+        "Agile Development",
+        "API Development"
+      ]
+    },
+    {
+      title: "tools & platforms",
+      skills: [
+        "Git",
+        "GitHub",
+        "Postman",
+        "Ollama",
+        "Claude Code",
+        "GitHub Copilot"
+      ]
     }
   ];
 
   return (
-
-    <section id="skills" className="max-w-3xl mx-auto px-6 py-4 mb-8 font-mono">
-      
-      {}
-      <h2 className="text-xl font-bold  text-white  mb-8">
-         <span className="text-[#ffffff]">Skills</span>
+    <section
+      id="skills"
+      className="max-w-3xl mx-auto px-6 py-4 mb-8"
+    >
+      <h2 className="text-2xl font-black font-mono text-white mb-8">
+        <span className="text-white">Skills</span>
       </h2>
 
-      {}
       <div className="space-y-8">
         {skillCategories.map((category, i) => (
           <div key={i} className="flex flex-col gap-3 group">
-            {}
-            <h3 className="text-[10px] uppercase tracking-wide font-bold text-gray-400">
+            
+            <h3 className="text-[10px] uppercase tracking-wide font-bold text-gray-400 mb-2">
               {category.title}
             </h3>
 
-            {}
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, index) => (
-                <div 
-                  key={index} 
-                  className="px-3 py-1.5 bg-[#111111] border border-white/10 text-[11px] text-gray-400 hover:border-[#FFDE03]/50 hover:text-white transition-all cursor-default rounded-sm"
+                <div
+                  key={index}
+                  className="px-3 py-1.5 bg-[#0c1834] border border-[#FF7A1A]/20 text-[11px] text-gray-300  hover:text-white hover:bg-[#2D3B5C] transition-all cursor-default rounded-sm"
                 >
                   {skill}
                 </div>
               ))}
             </div>
+
           </div>
         ))}
       </div>
+      <br />
+      <br />
+                                               <p className="w-full text-[#FF7A1A] overflow-hidden whitespace-nowrap text-sm md:text-base">
+  ---------------------------------------------------------------------------------------------------------------------------------------
+</p>
     </section>
   );
 }
