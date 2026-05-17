@@ -2,6 +2,13 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
+  title: "Med-Bot",
+  subtitle: "Hospital Query System",
+  description: "Built a RAG-based hospital query system using LangChain, FastAPI, Streamlit, and FAISS. Engineered an end-to-end pipeline for document ingestion, text chunking, embedding generation, and vector storage. Architected an admin panel for document management, content updates, and chat-log monitoring.",
+  tags: ["LangChain", "FastAPI", "Streamlit", "FAISS", "Python", "RAG"],
+  github: "https://github.com/madhanishere/med-bot"
+},
+  {
     title: "Research Assistant",
     subtitle: "AI-Powered Browser Extension",
     description: "A browser extension that extracts and summarizes web content. Architected a full-stack solution using Spring Boot REST APIs for high-performance content ingestion. Integrated note taking feature.",

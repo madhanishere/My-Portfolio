@@ -26,6 +26,7 @@ export default function Navbar() {
             <div key={item.name} className="flex items-center gap-4">
               <a
                 href={item.href}
+
                 className="text-gray-400 hover:text-[#FFDE03] transition-colors"
               >
                 {item.name}
