@@ -13,7 +13,7 @@ export default function Education() {
   ];
 
   return (
-    <section id="education" className="max-w-3xl mx-auto px-6 py-8">
+    <section id="experience" className="max-w-3xl mx-auto px-6 py-8">
       
       <h2 className="text-2xl font-black mb-12 text-white font-mono">
         <span className="text-white">Education</span>

@@ -23,7 +23,7 @@ export default function ExtraCurricular() {
   return (
     <section
       id="extra-curricular"
-      className="max-w-3xl mx-auto px-6 py-10"
+      className="max-w-3xl mx-auto px-6"
     >
       <div>
         
@@ -33,9 +33,9 @@ export default function ExtraCurricular() {
 
         <ul className="space-y-8">
           {activities.map((act, i) => (
-            <li key={i} className="space-y-3 text-xl">
+            <li key={i} className="space-y-1 text-xl">
               
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 
                 <h3 className="text-lg font-black text-[#E5E7EB] tracking-tight">
                   {act.role}

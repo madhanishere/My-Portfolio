@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="max-w-3xl mx-auto px-6 pt-10 pb-12 text-justify"
+      className="max-w-3xl mx-auto px-6 pt-2 pb-12 text-justify"
     >
 <br />
-      <h1 className="text-xl md:text-6xl font-black mb-6 flex flex-wrap items-center gap-4 tracking-tight">
+      <h1 className="text-xl md:text-3xl font-black mb-6 flex flex-wrap items-center gap-4 tracking-tight">
         
         <span className="text-4xl  text-white font-black font-mono tracking-tight">
           Madhan
@@ -19,7 +19,7 @@ export default function Hero() {
         
 
 
-<div className="flex items-center gap-3 mt-4 md:mt-0 md:ml-70">
+<div className="flex items-center gap-3 mt-2 md:mt-0 md:ml-70">
           <a
             href="https://github.com/madhanishere"
             target="_blank"
@@ -45,16 +45,23 @@ export default function Hero() {
             <Mail size={27} />
           </a>
         </div>
-
       </h1>
                <p className="w-full text-[#FF7A1A] overflow-hidden whitespace-nowrap text-sm md:text-base">
   ---------------------------------------------------------------------------------------------------------------------------------------
 </p>
 <br />
-      <p className="text-gray-400 text-sm leading-relaxed font-mono tracking-tight max-w-2xl">
-        Your friendly neighborhood developer!
-      </p>
     
+    <div className="relative w-full h-[400px] overflow-hidden rounded-xl absolute inset-0 bg-black/30">
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-full object-cover"
+  >
+    <source src="/public/hailuo-2_3_cozy_pixel_art_programmer_room_rainy_window_retro_computer_cat_near_fireplace_an-0.mp4" type="video/mp4" />
+  </video>
+</div>
       <div className="mt-10">
         
         <h2 className="text-2xl font-black mb-10  text-white font-mono tracking-tight">

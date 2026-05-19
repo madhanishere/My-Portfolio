@@ -1,48 +1,81 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function Navbar() {
+  const location = useLocation();
+
   const navItems = [
-    { name: "home", href: "#home" },
-    { name: "experience", href: "#experience" },
-    { name: "skills", href: "#skills" },
-    { name: "projects", href: "#projects" }
+    { name: "Home", path: "/" },
+    {name: "About", path: "/experience" },
+    { name: "Works", path: "/projects" },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[#1F2940]/70 backdrop-blur-xl border-b border-white/5 font-mono">
-      
-      <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-        
-        {/* Logo */}
-        <div className="flex items-center select-none">
-          <span className="text-sm font-black tracking-tight text-white">
-            MR
-            <span className="text-[#FF7A1A]">.</span>
-          </span>
-        </div>
+    <nav className="sticky top-0 z-50 backdrop-blur-sm">
+      <div
+        className="
+          max-w-3xl
+          mx-auto
 
-        {/* Nav Links */}
-        <div className="flex items-center gap-4 text-[12px] tracking-tight">
+          flex items-center justify-between
+
+          px-6 py-5
+        "
+      >
+
+        <h1
+          className="
+            text-[#ff8c42]
+            font-black
+            text-lg
+            tracking-wide
+          "
+        >
           
-          {navItems.map((item, index) => (
-            <div key={item.name} className="flex items-center gap-4">
-              
-              <a
-                href={item.href}
-                className="text-gray-400 hover:text-[#FF7A1A] transition-colors duration-200"
+        </h1>
+
+        <div className="flex items-center gap-6">
+          {navItems.map((item) => {
+            const active = location.pathname === item.path;
+
+            return (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`
+                  relative
+                  text-sm
+                  font-bold
+                  tracking-wide
+                  transition-all
+                  duration-200
+
+                  ${
+                    active
+                      ? "text-[#ff8c42]"
+                      : "text-[#d1d5db] hover:text-white"
+                  }
+                `}
               >
                 {item.name}
-              </a>
 
-              {index !== navItems.length - 1 && (
-                <span className="text-gray-700 select-none">
-                  /
-                </span>
-              )}
+                {active && (
+                  <span
+                    className="
+                      absolute
+                      left-0
+                      -bottom-2
 
-            </div>
-          ))}
+                      w-full
+                      h-[2px]
 
+                      bg-[#ff8c42]
+                    "
+                  />
+                )}
+              </Link>
+            );
+          })}
         </div>
-
       </div>
     </nav>
   );

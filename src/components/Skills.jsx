@@ -47,7 +47,7 @@ export default function Skills() {
 
   return (
     <section
-      id="skills"
+      id="experience"
       className="max-w-3xl mx-auto px-6 py-4 mb-8"
     >
       <h2 className="text-2xl font-black font-mono text-white mb-8">
