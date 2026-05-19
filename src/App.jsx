@@ -1,25 +1,21 @@
+import { Routes, Route } from "react-router-dom";
 
-import Hero from "./components/Hero";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import GithubChart from "./components/GithubChart";
-import ExtraCurricular from "./components/ExtraCurricular";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
+import Home from "./pages/Home";
+import ProjectsPage from "./pages/ProjectsPage";
+
+import ExperiencePage from "./pages/AboutPage";
 export default function App() {
   return (
     <div className="min-h-screen text-white">
-      <Hero />
-      <Experience />
-      <Education />
-<Projects />
-      <Skills />
-      <GithubChart />
-      <ExtraCurricular />
-<Footer />
+      <Navbar />
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/experience" element={<ExperiencePage />} />
+      </Routes>
     </div>
   );
 }
