@@ -59,7 +59,7 @@ export default function Hero() {
     playsInline
     className="w-full h-full object-cover"
   >
-    <source src="/public/hailuo-2_3_cozy_pixel_art_programmer_room_rainy_window_retro_computer_cat_near_fireplace_an-0.mp4" type="video/mp4" />
+    <source src="/hailuo-2_3_cozy_pixel_art_programmer_room_rainy_window_retro_computer_cat_near_fireplace_an-0.mp4" type="video/mp4" />
   </video>
 </div>
       <div className="mt-10">
